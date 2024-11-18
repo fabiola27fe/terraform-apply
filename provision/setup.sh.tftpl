@@ -1,0 +1,7 @@
+#!/bin/bash
+hostnamectl set-hostname "${hostname}"
+hostnamectl set-hostname "${hostname}" --pretty
+if [[ -f /etc/redhat-release ]] && ! rpm -q amazon-ssm-agent >/dev/null 2>/dev/null; then
+  dnf install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
+fi
+exit 0
