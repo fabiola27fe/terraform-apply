@@ -9,7 +9,7 @@ module "this" {
   ignore_ami_changes = true
 
   create_iam_instance_profile = false
-  iam_instance_profile        = "mapfre-talos-instance-profile"
+  iam_instance_profile        = "instance-profile"
 
   enable_volume_tags = true
   root_block_device = [
