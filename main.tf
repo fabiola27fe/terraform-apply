@@ -24,7 +24,6 @@ module "this" {
   associate_public_ip_address = false
   ipv6_address_count          = 0
 
-  user_data = local.os[var.os].user_data
 
   tags = var.tags
 }
