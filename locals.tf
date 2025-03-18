@@ -5,7 +5,6 @@ locals {
     al23 = {
       owner     = "257394448040"
       name_glob = "al23"
-      user_data = data.cloudinit_config.linux.rendered
     }
 
     
