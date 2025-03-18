@@ -31,7 +31,7 @@ locals {
     }
   }
 
-  ssm_prefix           = "Poseidon-IaaS"
-  ssm_parameter_name   = var.ssm_parameter_name != null ? var.ssm_parameter_name : ""
-  ssm_parameter_prefix = length(regexall("^/", local.ssm_parameter_name)) > 0 ? "/${local.ssm_prefix}${local.ssm_parameter_name}" : "/${local.ssm_prefix}/${local.ssm_parameter_name}"
+  #ssm_prefix           = "Poseidon-IaaS"
+  #ssm_parameter_prefix = length(regexall("^/", local.ssm_parameter_name)) > 0 ? "/${local.ssm_prefix}${local.ssm_parameter_name}" : "/${local.ssm_prefix}/${local.ssm_parameter_name}"
+  #ssm_parameter_name   = var.ssm_parameter_name != null ? var.ssm_parameter_name : ""
 }

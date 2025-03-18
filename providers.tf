@@ -11,11 +11,6 @@ terraform {
 
 provider "aws" {
   default_tags {
-    tags = var.talos_unique_id != "" ? {
-      talos_unique_id      = var.talos_unique_id,
-      deployed_by_poseidon = "true"
-      } : {
-      deployed_by_poseidon = "true"
-    }
+    
   }
 }
