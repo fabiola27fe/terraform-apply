@@ -52,6 +52,11 @@ variable "tags" {
   default     = {}
 }
 
+variable "instance_id" {
+  type = string
+}
+
+
 variable "d" {
   type        = string
   description = "Identificador único, suministrado por el workflow"
