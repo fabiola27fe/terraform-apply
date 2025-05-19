@@ -28,6 +28,11 @@ output "private_dns" {
   description = "Nombre DNS privado de la instancia EC2"
 }
 
+output "instance_id" {
+  value = aws_instance.this.id
+}
+
+
 output "tags_all" {
   value       = module.this.tags_all
   description = "Etiquetas de la instancia EC2"
