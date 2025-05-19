@@ -52,9 +52,9 @@ variable "tags" {
   default     = {}
 }
 
-variable "talos_unique_id" {
+variable "d" {
   type        = string
-  description = "Identificador único de Talos, suministrado por el workflow"
+  description = "Identificador único, suministrado por el workflow"
   default     = ""
 }
 
