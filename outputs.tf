@@ -29,7 +29,7 @@ output "private_dns" {
 }
 
 output "instance_id" {
-  value = aws_instance.this.id
+  value = module.this.id
 }
 
 
