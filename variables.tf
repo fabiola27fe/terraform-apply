@@ -52,10 +52,6 @@ variable "tags" {
   default     = {}
 }
 
-variable "instance_id" {
-  type = string
-}
-
 
 variable "d" {
   type        = string
